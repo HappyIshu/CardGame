@@ -1,0 +1,106 @@
+
+/* body{
+    background-color: #59a2f5;
+} */
+.card {
+    width: 90px;
+    height: 54px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+   }
+   
+   .h1 {
+    color: black;
+    height: 100%;
+    gap: .2em;
+    display: grid;
+    place-content: center;
+   }
+   .card:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }    
+   .card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    justify-items: center;
+   padding: 80px 400px;
+}
+.cardflipped
+{
+    background-color: rgb(3, 0, 0);
+    width: 90px;
+    height: 54px;
+
+}
+
+.timer_container {
+    text-align: center;
+  }
+  
+  .timer_container h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+  .button_container
+  {
+    text-align: center;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color:green;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .button:active {
+    background-color: #004080;
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+  
+  @keyframes confetti-fall {
+    0% {
+      transform: translateY(-100vh) rotateZ(0deg);
+    }
+    100% {
+      transform: translateY(100vh) rotateZ(360deg);
+    }
+  }
+  
+  .confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: #f0f;
+    opacity: 0.5;
+    animation: confetti-fall 5s linear infinite;
+  }
+  
+  .confetti:nth-child(odd) {
+    left: calc(5% + 90% * random());
+    top: calc(-10% * random());
+  }
+  .confetti:nth-child(even) {
+    left: calc(5% + 90% * random());
+    top: calc(-10% * random());
+  }
+  
