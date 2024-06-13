@@ -1,5 +1,5 @@
 import React from 'react'
-
+// This is Card
 const Card = ({number,isFlipped,onClick}) => {
     const cardClassName=`card${isFlipped?'':'flipped'}`;
     
