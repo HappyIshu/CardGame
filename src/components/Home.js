@@ -8,7 +8,7 @@ const Home = () => {
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
   const [celebrating, setCelebrating] = useState(false);
-
+// changes made by Swathi
   useEffect(() => {
     const shuffleArray = (numbers) => {
       const shuffledNumbers = [...numbers];
